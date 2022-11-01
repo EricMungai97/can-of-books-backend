@@ -1,11 +1,42 @@
-# Start your own "Can of Books" App
+# Can of Books BackEnd
 
-This repository has starter code to begin work on creating your own online bookshelf.
+***Author***: Eric Kinuthia, Domaine Scully
+***Version***: 1.0.O
 
-## What can books do?
+## Getting Started
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+ 1.Add mongoose to your server
+ 2. Build mongoose 'Book' schema.
+ 3. Use your schema to craft a Book model.
+ 4. Seed your database.
 
-## Use this template
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+## Overview
+
+Lets the user select a book from a gallery of books and add a book to the database.
+
+## Architecture
+
+1. JavaScript
+2. Node.js
+3. Express js
+4. Axios JS library.
+
+
+## Credit and Collaborations 
+
+Domaine Scully
+
+## Change Log
+
+10-31-2022 8;33pm - Application now has a fully-functional express server,with a GET route for MongoDB resources.
+
+## Name of Feature: Create and Store books in Database
+
+Estimate of time needed to complete: 2hrs
+
+Start time: 3pm
+
+Finish time: 5:10pm
+
+Actual time needed to complete: 2hrs
