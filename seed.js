@@ -17,6 +17,8 @@ async function seed() {
   
   });
 
+  console.log('YUSA was created')
+
   await Book.create({
     title: 'ROOTS',
     description: 'The Saga of an American Family is a 1976 novel written by Alex Haley. It tells the story of Kunta Kinte, an 18th-century African, captured as an adolescent, sold into slavery in Africa, and transported to North America; it follows his life and the lives of his descendants in the United States down to Haley.',
@@ -24,6 +26,7 @@ async function seed() {
   
   });
 
+  console.log('ROOTS was created')
   await Book.create({
     title: 'Rich Dad Poor Dad',
     description: 'Roberts story of growing up with two dads — his real father and the father of his best friend, his rich dad — and the ways in which both men shaped his thoughts about money and investing',
@@ -31,7 +34,7 @@ async function seed() {
   
   });
 
-  console.log('Yusa was created');
+  console.log('Rich Dad Poor Dad was created');
   mongoose.disconnect();
 
 }
