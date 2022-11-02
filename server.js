@@ -8,6 +8,8 @@ const getBooks = require('./modules/books.js');
 const { application } = require('express');
 const deleteBooks = require('./modules/deleteBook.js');
 const postBooks = require('./modules/postBook.js');
+const updateBook = require('./modules/putBook.js')
+const BookModel = require('./models/book.js');
 
 
 const app = express();
@@ -31,6 +33,12 @@ app.get('/test', (request, response) => {
   response.send('test request received')
 
 })
+
+//END POINT TO ADD A BOOK
+
+app.put('/books/:bookID', updateBook)
+
+
 
 // ENDPOINT - TO GET ALL books FROM THE DATABASE - SEND IT TO OUR FRONT END
 app.get('/books', getBooks);
