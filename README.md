@@ -53,6 +53,17 @@ Finish time: 7pm
 
 Actual time needed to complete: 5hrs
 
+## Name of Feature: Update Books on Database using PUT
+
+Estimate of time needed to complete: 4hrs
+
+Start time: 1PM
+
+Finish time: 4pm
+
+Actual time needed to complete: 4hrs
+
+
 ## Team Agreement
 
 ### Logistical
