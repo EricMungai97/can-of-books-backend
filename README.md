@@ -1,7 +1,7 @@
 # Can of Books BackEnd
 
 ***Author***: Eric Kinuthia, Domaine Scully
-***Version***: 1.0.O
+***Version***: 1.0.3
 
 ## Getting Started
 
