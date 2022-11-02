@@ -5,10 +5,16 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const getBooks = require('./modules/books.js');
+const { application } = require('express');
+const deleteBooks = require('./modules/deleteBook.js');
+const postBooks = require('./modules/postBook.js');
 
 
 const app = express();
 app.use(cors());
+
+//do you have that in your body, hey let me use that.BODY PARSER//
+app.use(express.json());
 
 mongoose.connect(process.env.DB_URL);
 const db = mongoose.connection;
@@ -26,9 +32,23 @@ app.get('/test', (request, response) => {
 
 })
 
-// ENDPOINT - TO GET ALL CATS FROM THE DATABASE - SEND IT TO OUR FRONT END
-
+// ENDPOINT - TO GET ALL books FROM THE DATABASE - SEND IT TO OUR FRONT END
 app.get('/books', getBooks);
+
+// ENDOINT TO ADD BOOKS
+
+app.post('/books', postBooks);
+
+//ENDPOIN TO DELETE BOOKS
+app.delete('/books/:bookID', deleteBooks);
+
+
+
+
+
+
+
+
 
 
 app.get('*', (request, response) => {
