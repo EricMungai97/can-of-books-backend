@@ -9,9 +9,7 @@ const { application } = require('express');
 const deleteBooks = require('./modules/deleteBook.js');
 const postBooks = require('./modules/postBook.js');
 const updateBook = require('./modules/putBook.js')
-const BookModel = require('./models/book.js');
-
-
+const verifyUser = require('./auth');
 const app = express();
 app.use(cors());
 
@@ -34,6 +32,7 @@ app.get('/test', (request, response) => {
 
 })
 
+app.use(verifyUser);
 //END POINT TO ADD A BOOK
 
 app.put('/books/:bookID', updateBook)
