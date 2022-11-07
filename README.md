@@ -1,7 +1,7 @@
 # Can of Books BackEnd
 
 ***Author***: Eric Kinuthia, Domaine Scully
-***Version***: 1.0.3
+***Version***: 1.0.4
 
 ## Getting Started
 
@@ -23,6 +23,7 @@ Lets the user select a book from a gallery of books and add a book to the databa
 4. Axios JS library.
 5. Mongo DB
 6. Mongoose JS library
+7. AuthO
 
 
 ## Credit and Collaborations 
@@ -32,6 +33,7 @@ Domaine Scully
 ## Change Log
 
 10-31-2022 8;33pm - Application now has a fully-functional express server,with a GET route for MongoDB resources.
+11-5-2022 6pm - Application has a fully functional Auth0.
 
 ## Name of Feature: Create and Store books in Database
 
@@ -63,6 +65,15 @@ Finish time: 4pm
 
 Actual time needed to complete: 4hrs
 
+## Name of Feature: Added Auth0 authentication 
+
+Estimate of time needed to complete: 4hrs
+
+Start time: 2PM
+
+Finish time: 6pm
+
+Actual time needed to complete: 4hrs
 
 ## Team Agreement
 

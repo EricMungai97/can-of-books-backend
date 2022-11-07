@@ -13,7 +13,7 @@ async function updateBook(request, response, next) {
     // 3 option object - { new: true, overwrite: true }
 
 
-    const updatedBook = await Book.findByIdAndUpdate(id, data, { new: true, overwrite: true })
+    const updatedBook = await Book.findByIdAndUpdate(id, data,{...request.body, email: request.user.email}, { new: true, overwrite: true })
     response.status(200).send(updatedBook);
 
   } catch (error) {
